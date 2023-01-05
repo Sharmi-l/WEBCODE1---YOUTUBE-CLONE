@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTUBE CLONE</title>
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
+</head>
+<body>
+    
+                                              <!-- Nav Bar -->
+    <nav class="main-nav">
+      
+        <!-- Navbar-left -->
+        <div class="left-nav  main-nav">
+             <!-- <i class="fa-solid fa-bars" class="bar"></i> -->
+             <img src="./images/baricon.png" class="bar">
+             <img src="./images/youtube.png" alt="youtube" class="logo">
+        </div>
+
+        
+        <!-- Navbar-middle -->
+        <div class="middle-nav main-nav">
+           <div class="search main-nav">
+            <input type="text" placeholder="Search">
+            <img  class="search-icon" src="./images/search.png">
+           </div>
+
+           <img src="./images/voice-search.png"  class="mic">
+        </div>
+
+        <!-- Navbar-right -->
+        <div class="right-nav">
+         <img src="./images/upload.png" id="upload">
+         <img src="./images/more.png" >
+         <img src="./images/notification.png">
+         <img src="./images/userladyicon.webp" class="user-icon">
+        </div>
+
+    </nav>
+
+                                                <!-- Side-Bar -->
+
+    <div class="sidebar">
+
+         <div class="shortcuts">
+            <a href="" class="link"><img src="./images/home.png" id="homeimg"><p >Home</p></a>
+            <a href="" class="link"><img src="./images/shorts.png"><p>Shorts</p></a>
+            <a href="" class="link"><img src="./images/subscription.png"><p>Subscriptions</p></a> <hr> <br>
+            <a href="" class="link"><img src="./images/library.png"><p>Library</p></a>
+            <a href="" class="link"><img src="./images/history.png"><p>History</p></a>
+            <a href="" class="link"><img src="./images/yourvideos.png"><p>Your videos</p></a>
+            <a href="" class="link"><img src="./images/watchlater.webp"><p>Watch later</p></a>
+            <a href="" class="link"><img src="./images/likes.png"><p>Liked videos</p></a> 
+            <a href="" class="link"><img src="./images/playlist.png"><p>Playlist</p></a>
+            <a href="" class="link"><img src="./images/show-more.png"><p>Show more</p></a> <hr> <br>
+
+         </div>
+
+         <div class="subcribed-list">
+    
+            <h3>Subcriptions</h3>
+            <!-- <a href=""><img src="./images/guvi.jpg"><p>Guvi sharing</p></a> -->
+            <a href=""><img src="./images/hiphop.jpg"><p>Hiphop Tamizha</p></a>
+            <a href=""><img src="./images/sony.jpg"><p>Sony Music India</p></a>
+            <a href=""><img src="./images/micset.jpg"><p>Mic Set</p></a>
+    
+        </div>
+
+    </div>
+
+                       
+                                                     <!-- Filters -->
+
+    <div class="filter">
+
+        <button class="btn active">All</button>
+        <button class="btn">CSS</button>
+        <button class="btn">Javascript</button>
+        <button class="btn">DOM</button>
+        <button class="btn">HTML</button>
+        <button class="btn">Songs</button>
+        <button class="btn">Editing</button>
+        <button class="btn">Live</button>
+        <button class="btn">Sales</button>
+        <button class="btn">Motivation</button>
+        <button class="btn">Tamil cinema</button>
+        <!-- <button class="btn">Filmi</button> -->
+        <button class="btn">Lectures</button>
+
+    </div>
+               
+                                                    <!--  MAIN CONTENT  -->
+
+    <div class="video-container">
+<!-- 
+        <div class="videos">
+            <img src="./images/thumbnail.jpg" class="thumbnail">
+             <img src="./images/thumbnail.jpg" class="thumbnail">
+            <img src="./images/thumbnail.jpg" class="thumbnail">
+            <img src="./images/thumbnail.jpg" class="thumbnail">
+            <img src="./images/thumbnail.jpg" class="thumbnail">
+
+            <div class="info">
+                <h4 class="title">youtube clone </h4>
+                <p class="channel-name">yathum ingea</p>
+            </div>
+
+       </div> -->
+
+       <div class="videos"> 
+          <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+           <source src="video.mp4" type="video/mp4" />
+          </video>
+
+      <div class="info">
+        <p class="channel-name"> Sun Tv</p>
+        <h4 class="title">Varisu - Official Trailer | Thalapathy Vijay | Rashmika </h4>  
+      </div>
+      </div>
+
+      
+      <div class="videos"> 
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+         <source src="video2.mp4" type="video/mp4" />
+        </video>
+
+    <div class="info">
+    
+      <h4 class="title"> Ennai Vittu Uyir ponalum💔🥺 Love Today </h4>  
+    </div>
+    </div>
+        
+
+    
+    <div class="videos"> 
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+         <source src="video3.mp4" type="video/mp4" />
+        </video>
+
+    <div class="info">
+      <h4 class="title"> 😍Bodhai Kaname Song--Anirudh--💘Love</h4>  
+    </div>
+    </div>
+
+    
+    <div class="videos"> 
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+         <source src="video4.mp4" type="video/mp4" />
+        </video>
+
+    <div class="info">
+      
+      <h4 class="title">Ezhu Kadal 💛Thandi Unakkaga Tamil Whatsapp Status HD Video  </h4>  
+    </div>
+    </div>
+
+    <div class="videos"> 
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+         <source src="video5.mp4" type="video/mp4" />
+        </video>
+
+    <div class="info">
+      
+      <h4 class="title">Green Signs of a Healthy & Successful Relationship ❤️</h4>  
+    </div>
+    </div>
+
+    <div class="videos"> 
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+         <source src="video6.mp4" type="video/mp4" />
+        </video>
+
+    <div class="info">
+   
+      <h4 class="title">Sita Ramam movie trailer bgm # telugu movie bgm  </h4>  
+    </div>
+    </div>
+
+    <div class="videos"> 
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+         <source src="video7.mp4" type="video/mp4" />
+        </video>
+
+    <div class="info">
+     
+      <h4 class="title">💙 Vaaney Vaaney 💙 Nee Thaane Ponjaathi 💙 Whatsapp Status Vertical Full Screen  </h4>  
+    </div>
+    </div>
+
+    
+<div class="videos"> 
+    <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+     <source src="video8.mp4" type="video/mp4" />
+    </video>
+
+<div class="info">
+ 
+  <h4 class="title">Unexpected Meet❤️😍--long distance relationship ❤️ </h4>  
+</div>
+</div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+
+        <!-- <div class="container">
+
+        <div class="thumbnail">
+            <img src="./images/thumbnail.jpg">
+        </div>
+
+       </div>  -->
+
+
+
+     
+
+
+
+
+
+    <!-- Script Link -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.plyr.io/3.7.3/plyr.polyfilled.js"></script>
+</body>
+</html>
